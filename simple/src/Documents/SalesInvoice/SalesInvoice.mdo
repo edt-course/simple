@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ceeae9cb-72c7-44f6-b281-09dc6c039ac3">
+  <producedTypes>
+    <objectType typeId="036250a6-7934-4ada-a6ac-387325a49567" valueTypeId="37e6a955-2792-4a9f-88e5-ea26db540aa1"/>
+    <refType typeId="c83b4b04-3a2e-4a6f-9464-29a892d55d65" valueTypeId="c2afe273-a491-433b-ba0e-bba590164a6b"/>
+    <selectionType typeId="23e6c56a-6301-4fb6-95bf-509f5f7aa628" valueTypeId="e01add94-5a83-4590-a37f-f60200221d0c"/>
+    <listType typeId="07fe8b57-5f97-422d-9441-4c2b2a7a92b9" valueTypeId="82bb4a7c-f6ea-4381-a72c-caba0052e378"/>
+    <managerType typeId="330178ab-d972-4b46-b225-62fb5eee6586" valueTypeId="768023c1-6687-4f2c-b99e-3d7db683876f"/>
+  </producedTypes>
+  <name>SalesInvoice</name>
+  <synonym>
+    <key>ru</key>
+    <value>Sales invoice</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.SalesInvoice.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.SalesInvoice.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="74ebff6e-9d11-4fb6-9b84-4484ccf47ab8">
+    <name>Item</name>
+    <synonym>
+      <key>ru</key>
+      <value>Item</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Items</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="814091d5-f27b-464c-acba-7cfd41b8091b">
+    <name>Quantity</name>
+    <synonym>
+      <key>ru</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a86f43c-6c69-4e0c-9c03-03612681a255">
+    <name>Price</name>
+    <synonym>
+      <key>ru</key>
+      <value>Price</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="23495a9c-5e22-4c53-a4f9-c8b3a1cb3841">
+    <name>Amount</name>
+    <synonym>
+      <key>ru</key>
+      <value>Amount</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a52dd416-335b-49aa-b46a-207c6284ee68">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
