@@ -1,36 +1,29 @@
 
-#Region Variables
-
-#EndRegion
-
-#Region FormEventHandlers
-
-// Enter code here.
-
-
-
-#EndRegion
-
 #Region FormHeaderItemsEventHandlers
 
-// Enter code here.
+&AtClient
+Procedure QuantityOnChange(Item)
+	
+	CalculateAmount( );
+	
+EndProcedure
 
-#EndRegion
-
-#Region FormTableItemsEventHandlers//<FromTableName>
-
-// Enter code here.
-
-#EndRegion
-
-#Region FormCommandsEventHandlers
-
-// Enter code here.
+&AtClient
+Procedure PriceOnChange(Item)
+	
+	CalculateAmount( );
+	
+EndProcedure
 
 #EndRegion
 
 #Region Private
 
-// Enter code here.
+&AtClient
+Procedure CalculateAmount( )
+	
+	Object.Amount = Object.Quantity * Object.Price;
+	
+EndProcedure
 
 #EndRegion
